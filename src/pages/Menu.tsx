@@ -33,7 +33,7 @@ export default function Menu() {
       price: "₹199",
       description: "Satisfy your cravings with Chicken Fry, a delectable dish featuring crispy, golden-brown chicken pieces seasoned to perfection.",
       rating: 3.8,
-      image: "/images/chicken_nuggets.png"
+      image: "./images/chicken_nuggets.png"
     },
     {
       name: "Peri Peri Chicken Nuggets",
@@ -41,7 +41,7 @@ export default function Menu() {
       price: "₹219",
       description: "Spicy and flavorful chicken nuggets tossed in our signature African bird's eye chilli seasoning mix.",
       rating: 4.3,
-      image: "/images/peri_peri_nuggets.png"
+      image: "./images/peri_peri_nuggets.png"
     },
     {
       name: "Chilli Chicken",
@@ -50,7 +50,7 @@ export default function Menu() {
       description: "Serves 1 | Savor the bold and tangy flavors of Chilli Chicken, a popular Indo-Chinese dish that combines succulent chicken with vibrant chili-infused sauce.",
       rating: 4.7,
       popular: true,
-      image: "/images/chilli_chicken.png"
+      image: "./images/chilli_chicken.png"
     },
     {
       name: "Tandoori Chicken",
@@ -58,7 +58,7 @@ export default function Menu() {
       price: "₹299",
       description: "Our tandoori chicken features tender chicken marinated in yogurt and aromatic spices, then tandoor-grilled to smoky perfection.",
       rating: 4.2,
-      image: "/images/tandoori_chicken.png"
+      image: "./images/tandoori_chicken.png"
     },
     
     // Momos
@@ -69,7 +69,7 @@ export default function Menu() {
       description: "Steamed chicken momos stuffed with seasoned minced chicken, served with garlic chilli dip.",
       rating: 4.6,
       popular: true,
-      image: "/images/steamed_momos_crescent.png"
+      image: "./images/steamed_momos_crescent.png"
     },
     {
       name: "Chicken Malai Momos",
@@ -78,7 +78,7 @@ export default function Menu() {
       description: "Steamed chicken momos coated in a rich, buttery, and luxurious cream (malai) dressing.",
       rating: 4.7,
       popular: true,
-      image: "/images/chicken_malai_momos.png"
+      image: "./images/chicken_malai_momos.png"
     },
     {
       name: "Fried Chicken Momos",
@@ -86,7 +86,7 @@ export default function Menu() {
       price: "₹140",
       description: "Deep-fried golden dumplings filled with hot, seasoned minced chicken.",
       rating: 4.5,
-      image: "/images/fried_momos_crescent.png"
+      image: "./images/fried_momos_crescent.png"
     },
 
     // Main Course
@@ -96,7 +96,7 @@ export default function Menu() {
       price: "₹299",
       description: "Serves 1 | Explore the rich and aromatic flavors of Chicken Kanti, a Nepalese dish with marinated chicken roasted over open flames.",
       rating: 4.3,
-      image: "/images/chicken_kanti_with_bone.jpg"
+      image: "./images/chicken_kanti_with_bone.jpg"
     },
     {
       name: "Chicken Kanti [Boneless]",
@@ -105,7 +105,7 @@ export default function Menu() {
       description: "Serves 1 | Explore the rich and aromatic flavors of Chicken Kanti, prepared with boneless chicken pieces roasted over open flames.",
       rating: 4.4,
       popular: true,
-      image: "/images/chicken_kanti_boneless.jpg"
+      image: "./images/chicken_kanti_boneless.jpg"
     },
     {
       name: "Butter Chicken (With Bone)",
@@ -113,7 +113,7 @@ export default function Menu() {
       price: "₹299",
       description: "Serves 1 | Rich, creamy, and packed with tender bone-in chicken cooked in a rich tomato, butter, and cashew gravy.",
       rating: 3.8,
-      image: "/images/butter_chicken.png"
+      image: "./images/butter_chicken.png"
     },
     {
       name: "Butter Chicken ( Boneless )",
@@ -122,7 +122,7 @@ export default function Menu() {
       description: "Curry made from boneless chicken with a spiced tomato and butter (makhan) sauce, famous for its rich velvety texture.",
       rating: 3.7,
       popular: true,
-      image: "/images/butter_chicken_creamy.png"
+      image: "./images/butter_chicken_creamy.png"
     },
     {
       name: "Chicken Curry",
@@ -130,7 +130,7 @@ export default function Menu() {
       price: "₹299",
       description: "Serves 1 | Comforting chicken curry simmered in a fragrant blend of spices, herbs, and a rich tomato-based gravy.",
       rating: 3.4,
-      image: "/images/chicken_curry.png"
+      image: "./images/chicken_curry.png"
     },
 
     // Biryani & Rice
@@ -141,7 +141,7 @@ export default function Menu() {
       description: "Serves 1 | Delight in the aromatic Chicken Biryani, combining tender chicken and fragrant long-grain basmati rice cooked slowly.",
       rating: 4.5,
       popular: true,
-      image: "/images/chicken_biryani_with_bone.jpg"
+      image: "./images/chicken_biryani_with_bone.jpg"
     },
     {
       name: "Chicken Biryani (Boneless)",
@@ -149,7 +149,7 @@ export default function Menu() {
       price: "₹159",
       description: "A savory chicken and rice dish including layers of boneless chicken, rice, and aromatics steamed together.",
       rating: 3.9,
-      image: "/images/chicken_biryani_boneless.jpg"
+      image: "./images/chicken_biryani_boneless.jpg"
     },
     {
       name: "Chicken Fried Rice",
@@ -157,7 +157,7 @@ export default function Menu() {
       price: "₹180",
       description: "Serves 1 | Flavorful blend of tender chicken, fluffy rice, and stir-fried fresh vegetables.",
       rating: 4.5,
-      image: "/images/chicken_fried_rice.png"
+      image: "./images/chicken_fried_rice.png"
     },
     {
       name: "Vegetable Fried Rice",
@@ -165,7 +165,7 @@ export default function Menu() {
       price: "₹140",
       description: "Serves 1 | Delightful medley of fresh vegetables and fluffy rice tossed in aromatic seasonings.",
       rating: 4.1,
-      image: "/images/veg_fried_rice.png"
+      image: "./images/veg_fried_rice.png"
     },
     {
       name: "Schezwan Chicken Fried Rice",
@@ -173,7 +173,7 @@ export default function Menu() {
       price: "₹200",
       description: "Serves 1 | A flavor-packed dish with aromatic rice, tender chicken pieces, veggies, and spicy Schezwan sauce.",
       rating: 4.8,
-      image: "/images/schezwan_chicken_fried_rice.jpg"
+      image: "./images/schezwan_chicken_fried_rice.jpg"
     },
     {
       name: "Schezwan Veg Fried Rice",
@@ -181,7 +181,7 @@ export default function Menu() {
       price: "₹160",
       description: "Hot & spicy fried rice with bursting flavors of ginger, garlic, soy sauce, red chilli paste, and fresh vegetables.",
       rating: 5.0,
-      image: "/images/schezwan_veg_fried_rice.jpg"
+      image: "./images/schezwan_veg_fried_rice.jpg"
     },
     {
       name: "Egg Fried Rice",
@@ -189,7 +189,7 @@ export default function Menu() {
       price: "₹180",
       description: "Serves 1 | Fluffy scrambled eggs, fragrant rice, and garden-fresh vegetables stir-fried to perfection.",
       rating: 4.2,
-      image: "/images/egg_fried_rice.jpg"
+      image: "./images/egg_fried_rice.jpg"
     },
     {
       name: "Plain Rice",
@@ -197,7 +197,7 @@ export default function Menu() {
       price: "₹100",
       description: "Serves 1 | Freshly cooked basmati rice, simple and fluffy, pairs beautifully with our curries.",
       rating: 4.0,
-      image: "/images/plain_rice.png"
+      image: "./images/plain_rice.png"
     },
     {
       name: "Butter Rice",
@@ -205,7 +205,7 @@ export default function Menu() {
       price: "₹120",
       description: "Serves 1 | Comforting hot rice tossed in melted premium butter.",
       rating: 4.1,
-      image: "/images/butter_rice.jpg"
+      image: "./images/butter_rice.jpg"
     },
 
     // Seafood
@@ -213,9 +213,9 @@ export default function Menu() {
       name: "Fish Nuggets ( Boneless )",
       category: "Seafood",
       price: "₹199",
-      description: "Serves 1 | Thinly sliced boneless fish deep-fried till golden and sprinkled with special dry spices.",
+      description: "Serves 1 | Thinly sliced boneless fish deep-fried till golden and spiced with special dry spices.",
       rating: 4.4,
-      image: "/images/fish_nuggets.png"
+      image: "./images/fish_nuggets.png"
     },
     {
       name: "Fish Kanti",
@@ -223,7 +223,7 @@ export default function Menu() {
       price: "₹279",
       description: "Serves 1 | Delicious seasoned seafood delicacy with a crispy exterior and tender inside.",
       rating: 4.5,
-      image: "/images/fish_kanti.png"
+      image: "./images/fish_kanti.png"
     },
     {
       name: "Chilli Fish Kanti",
@@ -231,7 +231,7 @@ export default function Menu() {
       price: "₹279",
       description: "Serves 1 | Crispy fried fish chunks tossed with spicy green chillies, capsicum, onions, and garlic glaze.",
       rating: 4.4,
-      image: "/images/chilli_fish_kanti.jpg"
+      image: "./images/chilli_fish_kanti.jpg"
     },
     {
       name: "Peri Peri Fish Nuggets",
@@ -239,7 +239,7 @@ export default function Menu() {
       price: "₹229",
       description: "White fish nuggets marinated in hot peri-peri spices and deep-fried.",
       rating: 4.3,
-      image: "/images/fish_nuggets.png"
+      image: "./images/fish_nuggets.png"
     },
     {
       name: "Fried Fish",
@@ -248,7 +248,7 @@ export default function Menu() {
       description: "Crispy deep-fried local fish coated in a rich traditional spice mix, served with lemons.",
       rating: 4.5,
       popular: true,
-      image: "/images/fried_fish.png"
+      image: "./images/fried_fish.png"
     },
 
     // Rolls & Shawarma
@@ -259,7 +259,7 @@ export default function Menu() {
       description: "Spiced, fire-grilled chicken shavings wrapped in rumali roti with rich garlic cream sauce.",
       rating: 4.6,
       popular: true,
-      image: "/images/shawarma_roll.png"
+      image: "./images/shawarma_roll.png"
     },
     {
       name: "Chicken Kathi Roll",
@@ -267,7 +267,7 @@ export default function Menu() {
       price: "₹160",
       description: "Sautéed chicken, sliced onions, and green chutney wrapped in egg-layered flatbread.",
       rating: 4.4,
-      image: "/images/kathi_roll.png"
+      image: "./images/kathi_roll.png"
     },
     {
       name: "Chicken Chowmein",
@@ -275,7 +275,7 @@ export default function Menu() {
       price: "₹180",
       description: "Stir-fried noodles with shredded chicken, cabbage, carrots, onions, and dark soy sauce.",
       rating: 4.4,
-      image: "/images/chicken_chowmein.png"
+      image: "./images/chicken_chowmein.png"
     },
     {
       name: "Veg Chowmein",
@@ -283,7 +283,7 @@ export default function Menu() {
       price: "₹140",
       description: "Wok-tossed noodles with fresh bell peppers, carrots, and spring onions.",
       rating: 4.2,
-      image: "/images/veg_chowmein.png"
+      image: "./images/veg_chowmein.png"
     },
 
     // Roti
@@ -293,7 +293,7 @@ export default function Menu() {
       price: "₹20",
       description: "Handkerchief-thin, hand-stretched bread cooked on an inverted dome griddle.",
       rating: 4.3,
-      image: "/images/rumali_roti.jpg"
+      image: "./images/rumali_roti.jpg"
     },
     {
       name: "Butter Rumali Roti",
@@ -301,7 +301,7 @@ export default function Menu() {
       price: "₹30",
       description: "Handkerchief-thin bread glazed with fresh melted butter.",
       rating: 4.4,
-      image: "/images/butter_rumali_roti.jpg"
+      image: "./images/butter_rumali_roti.jpg"
     }
   ];
 

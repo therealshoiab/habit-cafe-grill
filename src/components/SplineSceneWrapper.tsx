@@ -108,7 +108,7 @@ export default function SplineSceneWrapper({
         alignItems: 'center', 
         justifyContent: 'center',
         textAlign: 'center',
-        backgroundImage: 'url("/images/habit_storefront_1.jpg")',
+        backgroundImage: 'url("./images/habit_storefront_1.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         border: '1.5px solid var(--border-color)'

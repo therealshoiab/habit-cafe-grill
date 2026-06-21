@@ -24,7 +24,7 @@ export default function Signatures() {
       description: "Steamed to perfection, these soft, juicy dumplings are packed with fresh chicken mince and seasoned herbs, served with our legendary extra-spicy red chilli dip.",
       rating: "4.6 ★ (230+ ratings)",
       ingredients: ["Minced Chicken", "Garlic", "Spring Onions", "House Spicy Dip"],
-      image: "/images/steamed_momos_crescent.png",
+      image: "./images/steamed_momos_crescent.png",
       price: "₹120"
     },
     {
@@ -33,7 +33,7 @@ export default function Signatures() {
       description: "Our signature chicken momos deep-fried to a perfect golden crisp, offering a crunchy exterior while remaining juicy and flavorful on the inside.",
       rating: "4.5 ★ (190+ ratings)",
       ingredients: ["Fried Chicken Momos", "Garlic Mayo", "Tandoori Dipping Sauce"],
-      image: "/images/fried_momos_crescent.png",
+      image: "./images/fried_momos_crescent.png",
       price: "₹140"
     },
     {
@@ -42,7 +42,7 @@ export default function Signatures() {
       description: "Juicy, fire-roasted tandoori chicken chunks tossed with fresh onions, capsicum, green chutney, and cream, all wrapped inside a soft, flaky flatbread.",
       rating: "4.4 ★ (150+ ratings)",
       ingredients: ["Tandoori Chicken", "Flaky Paratha", "Sliced Onions", "Mint Chutney"],
-      image: "/images/kathi_roll.png",
+      image: "./images/kathi_roll.png",
       price: "₹160"
     },
     {
@@ -51,7 +51,7 @@ export default function Signatures() {
       description: "Wok-tossed noodles sautéed with tender shredded chicken, julienned carrots, green cabbage, spring onions, and our signature soy-garlic sauce blend.",
       rating: "4.4 ★ (120+ ratings)",
       ingredients: ["Wok-fried Noodles", "Shredded Chicken", "Cabbage & Carrots", "Soy Sauce"],
-      image: "/images/chicken_chowmein.png",
+      image: "./images/chicken_chowmein.png",
       price: "₹180"
     },
     {
@@ -60,7 +60,7 @@ export default function Signatures() {
       description: "Delightful stir-fried noodles tossed with green bell peppers, red carrots, cabbage, and scallions in a light savory glaze, perfect for noodle lovers.",
       rating: "4.2 ★ (80+ ratings)",
       ingredients: ["Noodles", "Bell Peppers", "Carrots", "Sautéed Onion & Garlic"],
-      image: "/images/veg_chowmein.png",
+      image: "./images/veg_chowmein.png",
       price: "₹140"
     },
     {
@@ -69,7 +69,7 @@ export default function Signatures() {
       description: "A Kashmiri-style dry preparation of tender boneless chicken sautéed on a high flame with onions, fresh green chillies, tomatoes, and aromatic home spices.",
       rating: "4.4 ★ (90+ ratings)",
       ingredients: ["Sautéed Boneless Chicken", "Green Chillies", "Thick Sliced Onions", "Kashmiri Spices"],
-      image: "/images/chicken_kanti_boneless.jpg",
+      image: "./images/chicken_kanti_boneless.jpg",
       price: "₹280"
     },
     {
@@ -78,7 +78,7 @@ export default function Signatures() {
       description: "Locally sourced fresh fish coated in an aromatic traditional batter, deep-fried to a perfect golden crisp while retaining tender, flaky meat inside.",
       rating: "4.5 ★ (70+ ratings)",
       ingredients: ["Local Fish", "Spiced Batter", "Lemon Wedges", "Mint Chutney"],
-      image: "/images/fried_fish.png",
+      image: "./images/fried_fish.png",
       price: "₹199"
     }
   ];

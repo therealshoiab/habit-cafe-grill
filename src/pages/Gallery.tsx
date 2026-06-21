@@ -169,7 +169,7 @@ export default function Gallery() {
       likes: '524',
       comments: '42',
       postUrl: 'https://www.facebook.com/TheHabitcafeandgrilll',
-      mediaUrl: '/images/habit_storefront_3.jpg'
+      mediaUrl: './images/habit_storefront_3.jpg'
     },
     {
       id: 2,
@@ -179,7 +179,7 @@ export default function Gallery() {
       likes: '456',
       comments: '28',
       postUrl: 'https://www.instagram.com/the_habit_cafe_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
-      mediaUrl: '/images/habit_storefront_1.jpg'
+      mediaUrl: './images/habit_storefront_1.jpg'
     },
     {
       id: 4,
@@ -189,7 +189,7 @@ export default function Gallery() {
       likes: '280',
       comments: '19',
       postUrl: 'https://www.instagram.com/the_habit_cafe_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
-      mediaUrl: '/images/habit_storefront_2.jpg'
+      mediaUrl: './images/habit_storefront_2.jpg'
     },
 
     // Social Hub (Instagram Posts / Reels)
@@ -203,7 +203,7 @@ export default function Gallery() {
       views: '1.2k',
       isVideo: true,
       postUrl: 'https://www.instagram.com/p/DRzatOkD-Ij/',
-      mediaUrl: '/videos/chef_birthday.mp4'
+      mediaUrl: './videos/chef_birthday.mp4'
     },
     {
       id: 7,
@@ -215,7 +215,7 @@ export default function Gallery() {
       views: '890',
       isVideo: true,
       postUrl: 'https://www.instagram.com/reel/DTXSm3Ekcwr/',
-      mediaUrl: '/videos/cafe_ambience.mp4'
+      mediaUrl: './videos/cafe_ambience.mp4'
     },
     {
       id: 8,
@@ -227,7 +227,7 @@ export default function Gallery() {
       views: '1.5k',
       isVideo: true,
       postUrl: 'https://www.instagram.com/reel/DRl2L8qx5Nd/',
-      mediaUrl: '/videos/momo_platter.mp4'
+      mediaUrl: './videos/momo_platter.mp4'
     },
     {
       id: 9,
@@ -238,7 +238,7 @@ export default function Gallery() {
       comments: '9',
       isVideo: false,
       postUrl: 'https://www.instagram.com/p/DRgu1sPkfx6/',
-      mediaUrl: '/videos/chicken_kanti.jpg'
+      mediaUrl: './videos/chicken_kanti.jpg'
     },
     {
       id: 10,
@@ -250,7 +250,7 @@ export default function Gallery() {
       views: '1.1k',
       isVideo: true,
       postUrl: 'https://www.instagram.com/reel/DFH5k9GvOxB/',
-      mediaUrl: '/videos/noodles_sizzle.mp4'
+      mediaUrl: './videos/noodles_sizzle.mp4'
     },
     {
       id: 11,
@@ -262,7 +262,7 @@ export default function Gallery() {
       views: '1.8k',
       isVideo: true,
       postUrl: 'https://www.instagram.com/reel/Cwb4ZG0otE7/',
-      mediaUrl: '/videos/reel_cwb4zg0ote7.mp4'
+      mediaUrl: './videos/reel_cwb4zg0ote7.mp4'
     },
     {
       id: 12,
@@ -274,7 +274,7 @@ export default function Gallery() {
       views: '2.4k',
       isVideo: true,
       postUrl: 'https://www.instagram.com/reel/DDR5tkcPrHw/',
-      mediaUrl: '/videos/reel_ddr5tkcprhw.mp4'
+      mediaUrl: './videos/reel_ddr5tkcprhw.mp4'
     },
     {
       id: 13,
@@ -286,7 +286,7 @@ export default function Gallery() {
       views: '1.6k',
       isVideo: true,
       postUrl: 'https://www.instagram.com/reel/DCoue-BS3n7/',
-      mediaUrl: '/videos/reel_dcoue_bs3n7.mp4'
+      mediaUrl: './videos/reel_dcoue_bs3n7.mp4'
     },
     {
       id: 14,
@@ -298,7 +298,7 @@ export default function Gallery() {
       views: '2.1k',
       isVideo: true,
       postUrl: 'https://www.instagram.com/reel/DByFm_UPB1E/',
-      mediaUrl: '/videos/reel_dbyfm_upb1e.mp4'
+      mediaUrl: './videos/reel_dbyfm_upb1e.mp4'
     },
     {
       id: 15,
@@ -310,7 +310,7 @@ export default function Gallery() {
       views: '3.2k',
       isVideo: true,
       postUrl: 'https://www.instagram.com/reel/DBlzgShvcsp/',
-      mediaUrl: '/videos/reel_dblzgshvcsp.mp4'
+      mediaUrl: './videos/reel_dblzgshvcsp.mp4'
     },
     {
       id: 16,
@@ -322,7 +322,7 @@ export default function Gallery() {
       views: '1.9k',
       isVideo: true,
       postUrl: 'https://www.instagram.com/reel/DAqx15LS-Gk/',
-      mediaUrl: '/videos/reel_daqx15ls_gk.mp4'
+      mediaUrl: './videos/reel_daqx15ls_gk.mp4'
     },
     {
       id: 17,
@@ -333,7 +333,7 @@ export default function Gallery() {
       comments: '6',
       isVideo: false,
       postUrl: 'https://www.instagram.com/p/DAqJ2CjP6sh/',
-      mediaUrl: '/videos/post_daqj2cjp6sh.jpg'
+      mediaUrl: './videos/post_daqj2cjp6sh.jpg'
     },
     {
       id: 18,
@@ -345,7 +345,7 @@ export default function Gallery() {
       views: '1.4k',
       isVideo: true,
       postUrl: 'https://www.instagram.com/reel/C_s5jFQPl7m/',
-      mediaUrl: '/videos/reel_c_s5jfqpl7m.mp4'
+      mediaUrl: './videos/reel_c_s5jfqpl7m.mp4'
     },
     {
       id: 19,
@@ -356,7 +356,7 @@ export default function Gallery() {
       comments: '18',
       isVideo: false,
       postUrl: 'https://www.instagram.com/p/C8eWzSRvglz/',
-      mediaUrl: '/videos/post_c8ewzsrvglz.jpg'
+      mediaUrl: './videos/post_c8ewzsrvglz.jpg'
     },
     {
       id: 20,
@@ -368,7 +368,7 @@ export default function Gallery() {
       views: '1.3k',
       isVideo: true,
       postUrl: 'https://www.instagram.com/reel/C7onxf_vrNs/',
-      mediaUrl: '/videos/reel_c7onxf_vrns.mp4'
+      mediaUrl: './videos/reel_c7onxf_vrns.mp4'
     },
     {
       id: 21,
@@ -380,7 +380,7 @@ export default function Gallery() {
       views: '2.8k',
       isVideo: true,
       postUrl: 'https://www.instagram.com/reel/C7ZShVdP4Vy/',
-      mediaUrl: '/videos/reel_c7zshvdp4vy.mp4'
+      mediaUrl: './videos/reel_c7zshvdp4vy.mp4'
     },
     {
       id: 22,
@@ -392,7 +392,7 @@ export default function Gallery() {
       views: '1.2k',
       isVideo: true,
       postUrl: 'https://www.instagram.com/reel/C6f0QRJP-g0/',
-      mediaUrl: '/videos/reel_c6f0qrjp_g0.mp4'
+      mediaUrl: './videos/reel_c6f0qrjp_g0.mp4'
     },
     {
       id: 23,
@@ -404,7 +404,7 @@ export default function Gallery() {
       views: '1.5k',
       isVideo: true,
       postUrl: 'https://www.instagram.com/reel/C6YvHDGPXm2/',
-      mediaUrl: '/videos/reel_c6yvhdgpxm2.mp4'
+      mediaUrl: './videos/reel_c6yvhdgpxm2.mp4'
     },
     {
       id: 24,
@@ -416,7 +416,7 @@ export default function Gallery() {
       views: '3.1k',
       isVideo: true,
       postUrl: 'https://www.instagram.com/reel/C6WjTDBv4_g/',
-      mediaUrl: '/videos/reel_c6wjtdbv4_g.mp4'
+      mediaUrl: './videos/reel_c6wjtdbv4_g.mp4'
     },
     {
       id: 25,
@@ -428,7 +428,7 @@ export default function Gallery() {
       views: '2.2k',
       isVideo: true,
       postUrl: 'https://www.instagram.com/reel/C5QwOf6PCw9/',
-      mediaUrl: '/videos/reel_c5qwof6pcw9.mp4'
+      mediaUrl: './videos/reel_c5qwof6pcw9.mp4'
     },
     {
       id: 26,
@@ -439,7 +439,7 @@ export default function Gallery() {
       comments: '14',
       isVideo: false,
       postUrl: 'https://www.instagram.com/p/C5OXcggP4bd/',
-      mediaUrl: '/videos/post_c5oxcggp4bd.jpg'
+      mediaUrl: './videos/post_c5oxcggp4bd.jpg'
     },
     {
       id: 27,
@@ -451,7 +451,7 @@ export default function Gallery() {
       views: '2.3k',
       isVideo: true,
       postUrl: 'https://www.instagram.com/reel/CtmLjNOguV-/',
-      mediaUrl: '/videos/reel_ctmljnoguv_.mp4'
+      mediaUrl: './videos/reel_ctmljnoguv_.mp4'
     },
     {
       id: 28,
@@ -463,7 +463,7 @@ export default function Gallery() {
       views: '920',
       isVideo: true,
       postUrl: 'https://www.instagram.com/reel/CpH0lOrAVcC/',
-      mediaUrl: '/videos/reel_cph0loravcc.mp4'
+      mediaUrl: './videos/reel_cph0loravcc.mp4'
     },
     {
       id: 29,
@@ -475,7 +475,7 @@ export default function Gallery() {
       views: '2.9k',
       isVideo: true,
       postUrl: 'https://www.instagram.com/reel/Cokn5GMgaEP/',
-      mediaUrl: '/videos/reel_cokn5gmagep.mp4'
+      mediaUrl: './videos/reel_cokn5gmagep.mp4'
     },
     {
       id: 30,
@@ -486,7 +486,7 @@ export default function Gallery() {
       comments: '21',
       isVideo: false,
       postUrl: 'https://www.instagram.com/p/Ckv5KAePnT7/',
-      mediaUrl: '/videos/post_ckv5kaepnt7.jpg'
+      mediaUrl: './videos/post_ckv5kaepnt7.jpg'
     },
     {
       id: 31,
@@ -497,7 +497,7 @@ export default function Gallery() {
       comments: '12',
       isVideo: false,
       postUrl: 'https://www.instagram.com/p/Ce05RXGvYRK/',
-      mediaUrl: '/videos/post_ce05rxgvyrk.jpg'
+      mediaUrl: './videos/post_ce05rxgvyrk.jpg'
     },
     {
       id: 32,
@@ -509,7 +509,7 @@ export default function Gallery() {
       views: '2.6k',
       isVideo: true,
       postUrl: 'https://www.instagram.com/p/Ccz0IUUPbzE/',
-      mediaUrl: '/videos/post_ccz0iuupbze.mp4'
+      mediaUrl: './videos/post_ccz0iuupbze.mp4'
     },
     {
       id: 33,
@@ -520,7 +520,7 @@ export default function Gallery() {
       comments: '31',
       isVideo: false,
       postUrl: 'https://www.instagram.com/p/CaPmZikvmE4/',
-      mediaUrl: '/videos/post_capmzikvme4.jpg'
+      mediaUrl: './videos/post_capmzikvme4.jpg'
     },
     {
       id: 34,
@@ -531,7 +531,7 @@ export default function Gallery() {
       comments: '15',
       isVideo: false,
       postUrl: 'https://www.instagram.com/p/CaHI16yP40U/',
-      mediaUrl: '/videos/post_cahi16yp40u.jpg'
+      mediaUrl: './videos/post_cahi16yp40u.jpg'
     },
     {
       id: 35,
@@ -542,7 +542,7 @@ export default function Gallery() {
       comments: '42',
       isVideo: false,
       postUrl: 'https://www.instagram.com/p/CWaatR4PitX/',
-      mediaUrl: '/videos/post_cwaatr4pitx.jpg'
+      mediaUrl: './videos/post_cwaatr4pitx.jpg'
     },
     {
       id: 36,
@@ -553,7 +553,7 @@ export default function Gallery() {
       comments: '10',
       isVideo: false,
       postUrl: 'https://www.instagram.com/p/CWSmZhXvHXf/',
-      mediaUrl: '/videos/post_cwsmzhxvhxf.jpg'
+      mediaUrl: './videos/post_cwsmzhxvhxf.jpg'
     },
     {
       id: 37,
@@ -564,7 +564,7 @@ export default function Gallery() {
       comments: '22',
       isVideo: false,
       postUrl: 'https://www.instagram.com/p/CWN6BCJvSKQ/',
-      mediaUrl: '/videos/post_cwn6bcjvskq.jpg'
+      mediaUrl: './videos/post_cwn6bcjvskq.jpg'
     },
     {
       id: 38,
@@ -575,7 +575,7 @@ export default function Gallery() {
       comments: '16',
       isVideo: false,
       postUrl: 'https://www.instagram.com/p/CWNnwTDvIC_/',
-      mediaUrl: '/videos/post_cwnnwtdvic_.jpg'
+      mediaUrl: './videos/post_cwnnwtdvic_.jpg'
     }
   ];
 

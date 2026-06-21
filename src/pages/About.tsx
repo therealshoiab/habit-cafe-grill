@@ -86,7 +86,7 @@ export default function About() {
                 overflow: 'hidden',
                 boxShadow: 'var(--card-shadow)',
                 border: '1.5px solid var(--border-color)',
-                backgroundImage: 'url("/images/habit_storefront_3.jpg")',
+                backgroundImage: 'url("./images/habit_storefront_3.jpg")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
               }}
