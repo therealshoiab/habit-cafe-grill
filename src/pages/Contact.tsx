@@ -19,7 +19,37 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (formData.name && formData.phone && formData.date) {
+      // Format date/time nicely
+      let formattedDate = formData.date;
+      try {
+        formattedDate = new Date(formData.date).toLocaleString('en-IN', {
+          dateStyle: 'medium',
+          timeStyle: 'short'
+        });
+      } catch (err) {
+        console.error("Error formatting date:", err);
+      }
+
+      // Build the WhatsApp message template
+      const whatsappMessage = `*New Table Reservation Request* 🍽️\n\n` +
+        `• *Name:* ${formData.name}\n` +
+        `• *Phone:* ${formData.phone}\n` +
+        `• *Email:* ${formData.email || 'N/A'}\n` +
+        `• *Number of Guests:* ${formData.guests} Guest(s)\n` +
+        `• *Date & Time:* ${formattedDate}\n` +
+        `• *Additional Notes:* ${formData.message || 'None'}`;
+
+      const encodedMessage = encodeURIComponent(whatsappMessage);
+      // User's temporary test number (will change to client's number later)
+      const targetNumber = '917780938743'; 
+      const whatsappUrl = `https://wa.me/${targetNumber}?text=${encodedMessage}`;
+
+      // Open WhatsApp in a new tab
+      window.open(whatsappUrl, '_blank');
+
+      // Set submission status
       setIsSubmitted(true);
+
       // Reset form
       setFormData({
         name: '',

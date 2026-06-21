@@ -7,6 +7,7 @@ const Spline = lazy(() => import('@splinetool/react-spline'));
 interface ErrorBoundaryProps {
   children: ReactNode;
   fallback: ReactNode;
+  onError: () => void;
 }
 
 interface ErrorBoundaryState {
@@ -24,6 +25,7 @@ class SplineErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySta
 
   public componentDidCatch(error: Error, errorInfo: ErrorInfo) {
     console.warn("Spline Render Error caught by Boundary:", error, errorInfo);
+    this.props.onError();
   }
 
   public render() {
@@ -148,7 +150,7 @@ export default function SplineSceneWrapper({
       {!isLoaded && !hasError && (fallback || defaultFallback)}
       
       {!hasError ? (
-        <SplineErrorBoundary fallback={errorFallback}>
+        <SplineErrorBoundary fallback={errorFallback} onError={() => setHasError(true)}>
           <Suspense fallback={fallback || defaultFallback}>
             <Spline 
               scene={scene} 
