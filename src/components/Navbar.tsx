@@ -60,7 +60,18 @@ export default function Navbar({
         alignItems: 'center',
         justifyContent: 'space-between',
         borderRadius: '50px',
-        transition: 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)'
+        transition: 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
+        background: isLightTheme 
+          ? 'rgba(255, 255, 255, 0.88)' 
+          : 'rgba(18, 18, 22, 0.92)',
+        backdropFilter: 'blur(30px) saturate(180%)',
+        WebkitBackdropFilter: 'blur(30px) saturate(180%)',
+        border: isLightTheme 
+          ? '1px solid rgba(211, 29, 36, 0.22)' 
+          : '1px solid rgba(255, 255, 255, 0.08)',
+        boxShadow: isScrolled
+          ? 'rgba(0, 0, 0, 0.12) 0px 10px 30px, rgba(211, 29, 36, 0.04) 0px 4px 16px'
+          : 'rgba(0, 0, 0, 0.04) 0px 4px 20px'
       }}
     >
       {/* Brand Logo Repro */}
