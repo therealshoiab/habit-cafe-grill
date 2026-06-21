@@ -84,7 +84,8 @@ export default function FAQ() {
                     fontSize: '1.1rem',
                     fontWeight: 600,
                     color: 'var(--text-heading)',
-                    gap: '1rem'
+                    gap: '1rem',
+                    textAlign: 'left'
                   }}
                 >
                   <span>{faq.question}</span>
