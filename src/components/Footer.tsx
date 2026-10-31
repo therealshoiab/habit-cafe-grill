@@ -85,11 +85,12 @@ export default function Footer({ setCurrentPage }: FooterProps) {
           <h4 style={{ fontSize: '1.1rem', marginBottom: '1.5rem', color: 'var(--text-heading)' }}>Quick Links</h4>
           <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem', fontSize: '0.9rem' }}>
             <li><a style={{ cursor: 'pointer' }} onClick={() => handleLinkClick('home')}>Home</a></li>
-            <li><a style={{ cursor: 'pointer' }} onClick={() => handleLinkClick('about')}>About Us</a></li>
+            <li><a style={{ cursor: 'pointer' }} onClick={() => handleLinkClick('about')}>About Us & FAQs</a></li>
             <li><a style={{ cursor: 'pointer' }} onClick={() => handleLinkClick('menu')}>Menu</a></li>
             <li><a style={{ cursor: 'pointer' }} onClick={() => handleLinkClick('signatures')}>Signature Dishes</a></li>
             <li><a style={{ cursor: 'pointer' }} onClick={() => handleLinkClick('gallery')}>Photo Gallery</a></li>
             <li><a style={{ cursor: 'pointer' }} onClick={() => handleLinkClick('reviews')}>Reviews</a></li>
+            <li><a style={{ cursor: 'pointer' }} onClick={() => handleLinkClick('admin')}>Admin Portal</a></li>
           </ul>
         </div>
 

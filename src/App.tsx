@@ -39,7 +39,10 @@ export default function App() {
         'home', 'about', 'menu', 'signatures', 'gallery', 
         'reviews', 'order', 'contact', 'faq', 'privacy', 'terms', 'admin'
       ];
-      if (validPages.includes(path)) {
+      if (path === 'faq') {
+        setCurrentPage('about');
+        window.location.hash = '#/about';
+      } else if (validPages.includes(path)) {
         setCurrentPage(path);
       } else {
         setCurrentPage('404');
@@ -90,6 +93,7 @@ export default function App() {
       case 'home':
         return <Home setCurrentPage={setCurrentPage} />;
       case 'about':
+      case 'faq':
         return <About />;
       case 'menu':
         return <Menu />;
@@ -103,8 +107,6 @@ export default function App() {
         return <OrderOnline />;
       case 'contact':
         return <Contact />;
-      case 'faq':
-        return <FAQ />;
       case 'privacy':
       case 'terms':
         return <Legal />;

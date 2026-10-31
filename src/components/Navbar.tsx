@@ -36,7 +36,7 @@ export default function Navbar({
     { key: 'reviews', label: 'Reviews' },
     { key: 'order', label: 'Order Online' },
     { key: 'contact', label: 'Contact' },
-    { key: 'faq', label: 'FAQ' }
+    { key: 'admin', label: 'Admin' }
   ];
 
   const handleLinkClick = (key: string) => {
