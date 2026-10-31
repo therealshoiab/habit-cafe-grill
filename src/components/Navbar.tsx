@@ -6,13 +6,15 @@ interface NavbarProps {
   setCurrentPage: (page: string) => void;
   isLightTheme: boolean;
   setIsLightTheme: (theme: boolean) => void;
+  hasBanner?: boolean;
 }
 
 export default function Navbar({ 
   currentPage, 
   setCurrentPage, 
   isLightTheme, 
-  setIsLightTheme 
+  setIsLightTheme,
+  hasBanner = false
 }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -49,7 +51,9 @@ export default function Navbar({
       className={`glass-panel navbar-container ${isScrolled ? 'nav-scrolled' : ''}`}
       style={{
         position: 'fixed',
-        top: isScrolled ? '1rem' : '1.5rem',
+        top: hasBanner 
+          ? (isScrolled ? '3rem' : '3.4rem') 
+          : (isScrolled ? '1rem' : '1.5rem'),
         left: '50%',
         transform: 'translateX(-50%)',
         width: '92%',

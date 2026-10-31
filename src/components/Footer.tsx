@@ -131,9 +131,33 @@ export default function Footer({ setCurrentPage }: FooterProps) {
         </div>
         
         {/* Policy Links */}
-        <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
+        <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
           <a onClick={() => handleLinkClick('privacy')} style={{ cursor: 'pointer' }}>Privacy Policy</a>
           <a onClick={() => handleLinkClick('terms')} style={{ cursor: 'pointer' }}>Terms & Conditions</a>
+          <a 
+            onClick={() => handleLinkClick('admin')} 
+            style={{ 
+              cursor: 'pointer', 
+              color: 'var(--text-muted)',
+              fontSize: '0.82rem',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.35rem',
+              opacity: 0.75,
+              transition: 'opacity 0.2s ease, color 0.2s ease'
+            }}
+            title="Owner & Manager Login"
+            onMouseEnter={(e) => {
+              e.currentTarget.style.opacity = '1';
+              e.currentTarget.style.color = 'var(--primary-color)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.opacity = '0.75';
+              e.currentTarget.style.color = 'var(--text-muted)';
+            }}
+          >
+            🔒 Owner Login
+          </a>
         </div>
       </div>
 

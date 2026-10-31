@@ -74,6 +74,11 @@ const pagesMeta: Record<string, PageMetadata> = {
     title: "Terms & Conditions | The Habit Cafe & Grill",
     description: "Read the terms of service and dining conditions for The Habit Cafe & Grill.",
     keywords: "terms and conditions"
+  },
+  admin: {
+    title: "Owner & Manager Admin Portal | The Habit Cafe & Grill",
+    description: "Secure management portal for Habit Cafe & Grill to edit menu, prices, photos, and live broadcast banners.",
+    keywords: "admin portal, habit cafe manager"
   }
 };
 

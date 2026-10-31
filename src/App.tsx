@@ -5,6 +5,7 @@ import { updateSEO } from './utils/seoHelper';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import LoadingScreen from './components/LoadingScreen';
+import BroadcastBanner from './components/BroadcastBanner';
 
 // Pages
 import Home from './pages/Home';
@@ -18,10 +19,12 @@ import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
 import Legal from './pages/Legal';
 import NotFound from './pages/NotFound';
+import Admin from './pages/Admin';
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState('home');
+  const [hasBanner, setHasBanner] = useState(false);
   const [isLightTheme, setIsLightTheme] = useState(() => {
     const saved = localStorage.getItem('theme-preference');
     return saved !== 'dark'; // Light by default
@@ -34,7 +37,7 @@ export default function App() {
       const path = hash.replace(/^#\//, '');
       const validPages = [
         'home', 'about', 'menu', 'signatures', 'gallery', 
-        'reviews', 'order', 'contact', 'faq', 'privacy', 'terms'
+        'reviews', 'order', 'contact', 'faq', 'privacy', 'terms', 'admin'
       ];
       if (validPages.includes(path)) {
         setCurrentPage(path);
@@ -105,6 +108,8 @@ export default function App() {
       case 'privacy':
       case 'terms':
         return <Legal />;
+      case 'admin':
+        return <Admin setCurrentPage={setCurrentPage} />;
       case '404':
       default:
         return <NotFound setCurrentPage={setCurrentPage} />;
@@ -122,7 +127,8 @@ export default function App() {
           {/* Scroll progress bar */}
           <div className="scroll-progress-bar" />
 
-          {/* Custom Trail Cursors removed per user request */}
+          {/* Live Broadcast Announcement Ticker (Top Bar) */}
+          <BroadcastBanner onVisibilityChange={setHasBanner} />
 
           {/* Navigation */}
           <Navbar 
@@ -130,6 +136,7 @@ export default function App() {
             setCurrentPage={setCurrentPage} 
             isLightTheme={isLightTheme} 
             setIsLightTheme={setIsLightTheme} 
+            hasBanner={hasBanner}
           />
 
           {/* Active view body */}
