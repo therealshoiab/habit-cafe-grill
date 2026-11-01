@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { updateSEO } from './utils/seoHelper';
+import { menuService } from './services/menuService';
 
 // Layout & Global Components
 import Navbar from './components/Navbar';
@@ -29,6 +30,11 @@ export default function App() {
     const saved = localStorage.getItem('theme-preference');
     return saved !== 'dark'; // Light by default
   });
+
+  // Initial real-time sync with Cloudflare D1
+  useEffect(() => {
+    menuService.syncWithRemote();
+  }, []);
 
   // Sync hash routing on mount and hash changes
   useEffect(() => {

@@ -106,28 +106,33 @@ export default function BroadcastBanner({ onVisibilityChange }: BroadcastBannerP
           margin: '0 1.25rem',
           position: 'relative'
         }}
+        title="Hover to pause announcement"
       >
         <div 
           className="broadcast-marquee-track"
           style={{
-            display: 'inline-block',
+            display: 'inline-flex',
+            alignItems: 'center',
             whiteSpace: 'nowrap',
-            animation: 'marqueeScrollRightToLeft 20s linear infinite'
+            animation: 'marqueeScrollRightToLeft 30s linear infinite',
+            width: 'max-content'
           }}
         >
-          <span>
+          <span style={{ paddingRight: '3.5rem' }}>
             {banner.message}
-            &nbsp;&nbsp;&nbsp;&nbsp;✦&nbsp;&nbsp;&nbsp;&nbsp;
-            {banner.message}
-            &nbsp;&nbsp;&nbsp;&nbsp;✦&nbsp;&nbsp;&nbsp;&nbsp;
-            {banner.message}
+          </span>
+          <span style={{ paddingRight: '3.5rem' }}>
+            ✦ &nbsp;&nbsp;&nbsp; {banner.message}
+          </span>
+          <span style={{ paddingRight: '3.5rem' }}>
+            ✦ &nbsp;&nbsp;&nbsp; {banner.message}
           </span>
         </div>
       </div>
 
       {/* Right Action & Dismiss */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', flexShrink: 0, zIndex: 2 }}>
-        {banner.linkText && banner.linkUrl && (
+        {banner.linkText && banner.linkText.trim().toLowerCase() !== 'order online' && banner.linkUrl && (
           <button
             onClick={handleLinkClick}
             style={{
@@ -173,15 +178,17 @@ export default function BroadcastBanner({ onVisibilityChange }: BroadcastBannerP
 
       <style>{`
         @keyframes marqueeScrollRightToLeft {
-          0% { transform: translateX(100%); }
-          100% { transform: translateX(-100%); }
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-33.333%); }
         }
         @keyframes blinkPulse {
           0%, 100% { opacity: 1; transform: scale(1); }
           50% { opacity: 0.5; transform: scale(0.92); }
         }
-        .broadcast-marquee-container:hover .broadcast-marquee-track {
+        .broadcast-marquee-container:hover .broadcast-marquee-track,
+        .broadcast-marquee-track:hover {
           animation-play-state: paused;
+          cursor: default;
         }
       `}</style>
     </div>

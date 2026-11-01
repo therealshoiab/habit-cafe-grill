@@ -31,8 +31,8 @@ export const MENU_CATEGORIES = [
 export const DEFAULT_BROADCAST_BANNER: BroadcastBannerData = {
   enabled: true,
   message: '🔥 Welcome to The Habit Cafe & Grill! Enjoy Srinagar\'s finest momos, sizzling grills & authentic kanti. Dine-in, Takeaway & Delivery available.',
-  linkText: 'Order Online',
-  linkUrl: '#/order',
+  linkText: '',
+  linkUrl: '',
   variant: 'red'
 };
 

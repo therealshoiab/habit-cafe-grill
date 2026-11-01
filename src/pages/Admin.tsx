@@ -59,6 +59,9 @@ export default function Admin({ setCurrentPage }: AdminProps) {
   const [confirmPasscodeInput, setConfirmPasscodeInput] = useState('');
   const [passcodeMessage, setPasscodeMessage] = useState('');
   const [passcodeError, setPasscodeError] = useState('');
+  const [apiEndpointInput, setApiEndpointInput] = useState(() => menuService.getApiEndpoint());
+  const [syncLoading, setSyncLoading] = useState(false);
+  const [syncMessage, setSyncMessage] = useState('');
 
   const refreshMenuData = () => {
     const currentItems = menuService.getMenuItems();
@@ -1216,7 +1219,7 @@ export default function Admin({ setCurrentPage }: AdminProps) {
                   </label>
                   <input 
                     type="text"
-                    placeholder="e.g. Order Online or Call Us"
+                    placeholder="e.g. Call Now or View Deals (Leave blank for no button)"
                     value={bannerConfig.linkText || ''}
                     onChange={(e) => setBannerConfig({ ...bannerConfig, linkText: e.target.value })}
                     style={{
@@ -1348,7 +1351,95 @@ export default function Admin({ setCurrentPage }: AdminProps) {
             TAB 4: SETTINGS & SECURITY
         ========================================================================= */}
         {activeTab === 'settings' && (
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }} className="admin-grid-2">
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+            
+            {/* Cloudflare D1 Real-Time Sync Status */}
+            <div 
+              className="glass-panel"
+              style={{
+                padding: '2rem 2.5rem',
+                borderRadius: '20px',
+                border: '1.5px solid var(--border-color)'
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem', flexWrap: 'wrap', gap: '1rem' }}>
+                <div>
+                  <h2 style={{ fontSize: '1.4rem', fontFamily: "'Playfair Display', serif", color: 'var(--text-heading)', marginBottom: '0.35rem' }}>
+                    ⚡ Cloudflare D1 Real-Time Database Sync
+                  </h2>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem' }}>
+                    Ensures menu updates, dish photos, prices, and announcements sync globally across all customers' phones and computers in real time.
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  onClick={async () => {
+                    setSyncLoading(true);
+                    const res = await menuService.syncWithRemote();
+                    setSyncLoading(false);
+                    if (res.success) {
+                      setSyncMessage(`✅ Synced live with Cloudflare D1 (${res.menuCount} dishes active).`);
+                    } else {
+                      setSyncMessage('ℹ️ Local cache active. Cloudflare D1 Pages Functions (/api/menu) ready.');
+                    }
+                    setTimeout(() => setSyncMessage(''), 5000);
+                  }}
+                  className="btn btn-primary"
+                  style={{ padding: '0.65rem 1.35rem', fontSize: '0.85rem' }}
+                  disabled={syncLoading}
+                >
+                  {syncLoading ? 'Syncing...' : '🔄 Sync with D1 Database'}
+                </button>
+              </div>
+
+              {syncMessage && (
+                <div style={{ padding: '0.75rem 1.25rem', backgroundColor: 'rgba(52, 199, 89, 0.12)', border: '1px solid #34c759', color: '#24963f', borderRadius: '10px', marginBottom: '1rem', fontSize: '0.88rem', fontWeight: 600 }}>
+                  {syncMessage}
+                </div>
+              )}
+
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-heading)' }}>
+                  Custom Cloudflare Worker / API Endpoint (Optional)
+                </label>
+                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+                  <input 
+                    type="text"
+                    placeholder="Leave blank for automatic /api/menu on Cloudflare Pages, or enter Worker URL..."
+                    value={apiEndpointInput}
+                    onChange={(e) => setApiEndpointInput(e.target.value)}
+                    style={{
+                      flexGrow: 1,
+                      minWidth: '280px',
+                      padding: '0.75rem 1rem',
+                      borderRadius: '10px',
+                      border: '1.5px solid var(--border-color)',
+                      backgroundColor: 'var(--surface-color)',
+                      color: 'var(--text-color)',
+                      fontSize: '0.9rem'
+                    }}
+                  />
+                  <button
+                    type="button"
+                    onClick={() => {
+                      menuService.setApiEndpoint(apiEndpointInput);
+                      setSyncMessage('Endpoint saved. Attempting sync...');
+                      menuService.syncWithRemote();
+                      setTimeout(() => setSyncMessage(''), 4000);
+                    }}
+                    className="btn btn-secondary"
+                    style={{ padding: '0.75rem 1.25rem' }}
+                  >
+                    Save Endpoint
+                  </button>
+                </div>
+                <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
+                  Auto-configured: Cloudflare Pages automatically links <code>/api/menu</code> and <code>/api/broadcast</code> directly to your D1 database.
+                </span>
+              </div>
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }} className="admin-grid-2">
             
             {/* Change Passcode */}
             <div 
@@ -1532,7 +1623,8 @@ export default function Admin({ setCurrentPage }: AdminProps) {
               </div>
             </div>
           </div>
-        )}
+        </div>
+      )}
 
       </div>
 
