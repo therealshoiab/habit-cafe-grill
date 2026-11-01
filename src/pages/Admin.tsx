@@ -370,24 +370,7 @@ export default function Admin({ setCurrentPage }: AdminProps) {
             </button>
           </form>
 
-          {/* Quick Helper Note for the owner */}
-          <div 
-            style={{ 
-              marginTop: '1.8rem', 
-              padding: '0.75rem 1rem', 
-              borderRadius: '10px', 
-              backgroundColor: 'rgba(211, 29, 36, 0.05)', 
-              border: '1px dashed var(--border-color)',
-              fontSize: '0.8rem',
-              color: 'var(--text-muted)'
-            }}
-          >
-            <strong>Default Passcode:</strong> <code>Habit@2026</code>
-            <br />
-            <span style={{ fontSize: '0.75rem' }}>(You can change this anytime inside the Settings tab)</span>
-          </div>
-
-          <div style={{ marginTop: '1.5rem' }}>
+          <div style={{ marginTop: '1.8rem' }}>
             <a 
               href="#/home" 
               style={{ fontSize: '0.85rem', color: 'var(--primary-color)', textDecoration: 'none', fontWeight: 600 }}

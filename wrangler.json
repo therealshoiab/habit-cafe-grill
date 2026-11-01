@@ -1,11 +1,13 @@
 {
   "name": "habit-cafe-grill",
   "pages_build_output_dir": "./dist",
+  "compatibility_date": "2026-08-01",
+  "compatibility_flags": ["nodejs_compat"],
   "d1_databases": [
     {
       "binding": "DB",
       "database_name": "habit-cafe-db",
-      "database_id": "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+      "database_id": "1c5269e7-0dc2-47b9-926d-ef38fe9b4d1e"
     }
   ]
 }

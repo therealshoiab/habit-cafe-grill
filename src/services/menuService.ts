@@ -14,7 +14,13 @@ export const menuService = {
   getApiEndpoint: (): string => {
     try {
       const stored = localStorage.getItem(STORAGE_KEY_API);
-      return stored ? stored.trim().replace(/\/+$/, '') : '';
+      if (stored && stored.trim()) return stored.trim().replace(/\/+$/, '');
+
+      // Automatically connect to the live Cloudflare D1 backend from GitHub Pages or localhost
+      if (typeof window !== 'undefined' && (window.location.hostname.includes('github.io') || window.location.hostname === 'localhost')) {
+        return 'https://habit-cafe-grill.pages.dev';
+      }
+      return '';
     } catch {
       return '';
     }
